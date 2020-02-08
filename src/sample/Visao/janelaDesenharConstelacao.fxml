@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Maps" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controle.JanelaDesenharConstelacao">
+   <children>
+      <Label fx:id="Draw" layoutX="97.0" layoutY="7.0" text="Draw Constellation">
+         <font>
+            <Font size="60.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#428bff" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <JFXComboBox fx:id="cb" focusColor="#00ff9d" labelFloat="true" layoutX="255.0" layoutY="95.0" promptText="Constellations" style="-fx-font-size: 16; -fx-background-color: #00d8ff;">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#00ff9d" />
+                  <Stop color="#00ff9d" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+      </JFXComboBox>
+      <AnchorPane layoutX="80.0" layoutY="160.0" prefHeight="345.0" prefWidth="532.0" style="-fx-background-color: black; -fx-border-color: blue;">
+         <children>
+            <Canvas fx:id="canvas" height="345.0" width="532.0" />
+         </children></AnchorPane>
+      <JFXButton fx:id="Cancel" buttonType="RAISED" layoutX="356.0" layoutY="544.0" onAction="#Cancel" prefHeight="48.0" prefWidth="114.0" style="-fx-background-color: #f41339;" text="Cancel">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="Confirm" buttonType="RAISED" layoutX="498.0" layoutY="543.0" onAction="#Cadastrar" prefHeight="48.0" prefWidth="114.0" style="-fx-background-color: #07ffd9;" text="Confirm">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <CheckBox fx:id="btLinha" layoutX="80.0" layoutY="546.0" mnemonicParsing="false" onMouseClicked="#Linha" prefHeight="43.0" prefWidth="201.0" style="-fx-background-color: yellow;" text="Draw Lines">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </CheckBox>
+   </children>
+</AnchorPane>

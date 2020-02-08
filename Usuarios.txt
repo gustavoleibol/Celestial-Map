@@ -1,0 +1,6 @@
+63;2;a;a;a;70.0;#42b0f4;#00ddff;1
+64;78;Andy;Andy;333;70.0;#00ddff;#42b0f4;1
+65;79;Nazaré;Jesus;333;70.0;#00ddff;#42b0f4;1
+66;80;Pikachu;Pikachu;333;70.0;#00ddff;#42b0f4;1
+67;81;gustavo;gustavo;gus;70.0;#00ddff;#42b0f4;1
+68;82;cabo;cabo;cabo;12.230215827338126;#ffeb3bff;#42b0f4ff;1

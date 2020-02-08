@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Principal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" style="-fx-background-color: #161719;" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controle.JanelaPrincipal">
+
+    <MediaView fx:id="mv" fitHeight="-Infinity" fitWidth="-Infinity" />
+
+    <AnchorPane fx:id="Login" layoutX="612.0" layoutY="66.0" opacity="0.79" prefHeight="411.0" prefWidth="426.0" style="-fx-background-color: #8fade8;">
+        <effect>
+            <ColorAdjust brightness="-0.24" contrast="1.0" hue="-0.17" saturation="0.02" />
+        </effect>
+      <HBox alignment="CENTER" layoutY="1.0" prefHeight="100.0" prefWidth="426.0">
+         <children>
+      
+              <Label alignment="CENTER" prefHeight="101.0" prefWidth="430.0" text="Sign In" textAlignment="JUSTIFY">
+                  <font>
+                      <Font size="69.0" />
+                  </font>
+              </Label>
+         </children>
+      </HBox>
+        <JFXTextField fx:id="tfLogin" focusColor="BLACK" labelFloat="true" layoutX="96.0" layoutY="128.0" prefHeight="66.0" prefWidth="294.0" promptText="  Login" style="-fx-background-color: white;">
+            <font>
+                <Font size="22.0" />
+            </font>
+            <unFocusColor>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </unFocusColor>
+        </JFXTextField>
+        <JFXPasswordField fx:id="tfSenha" focusColor="BLACK" labelFloat="true" layoutX="96.0" layoutY="230.0" prefHeight="66.0" prefWidth="294.0" promptText="  Password" style="-fx-background-color: white;">
+            <unFocusColor>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </unFocusColor>
+            <font>
+                <Font size="22.0" />
+            </font>
+        </JFXPasswordField>
+      <HBox alignment="CENTER" layoutY="311.0" prefHeight="101.0" prefWidth="426.0">
+         <children>
+            <AnchorPane prefHeight="156.0" prefWidth="441.0">
+               <children>
+            
+                    <JFXButton buttonType="RAISED" layoutX="91.0" layoutY="22.0" onAction="#Logar" onMouseClicked="#Logar" prefHeight="58.0" prefWidth="122.0" style="-fx-background-color: #07ffd9; -fx-cursor: hand" text="Login">
+                        <font>
+                            <Font size="22.0" />
+                        </font>
+                    </JFXButton>
+                    <JFXButton buttonType="RAISED" layoutX="254.0" layoutY="22.0" onAction="#Sair" onMouseClicked="#Sair" prefHeight="58.0" prefWidth="122.0" style="-fx-background-color: #e51223; -fx-cursor: hand" text="Exit">
+                        <font>
+                            <Font size="22.0" />
+                        </font>
+                    </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+        <ImageView fitHeight="114.0" fitWidth="114.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Imagens/Username.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="88.0" fitWidth="76.0" layoutX="11.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Imagens/Password.png" />
+            </image>
+        </ImageView>
+
+    </AnchorPane>
+   <HBox alignment="CENTER" layoutX="2.0" layoutY="66.0" prefHeight="10.0" prefWidth="610.0">
+      <children>
+         <Label fx:id="txt1" alignment="TOP_CENTER" prefHeight="120.0" prefWidth="610.0" text="WELCOME TO CELESTIAL MAP!" textAlignment="JUSTIFY" textFill="WHITE">
+            <font>
+               <Font size="35.0" />
+            </font>
+         </Label>
+      </children>
+   </HBox>
+    <AnchorPane fx:id="Cadastro" layoutX="74.0" layoutY="183.0" opacity="0.79" prefHeight="352.0" prefWidth="415.0">
+        <children>
+            <JFXButton buttonType="RAISED" layoutX="80.0" layoutY="268.0" onAction="#Cancel" prefHeight="48.0" prefWidth="114.0" style="-fx-background-color: #e51223; -fx-cursor: hand" text="Cancel">
+                <font>
+                    <Font size="20.0" />
+                </font></JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="222.0" layoutY="268.0" onAction="#btCadastrar" prefHeight="48.0" prefWidth="114.0" style="-fx-background-color: #07ffd9; -fx-cursor: hand" text="Confirm">
+                <font>
+                    <Font size="20.0" />
+                </font></JFXButton>
+            <JFXTextField fx:id="cLogin" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="104.0" layoutY="24.0" prefHeight="39.0" prefWidth="210.0" promptText="Login" style="-fx-background-color: white;">
+                <font>
+                    <Font size="22.0" />
+                </font>
+            <unFocusColor>
+               <LinearGradient endX="1.0" endY="1.0" startX="0.9857142857142858">
+                  <stops>
+                     <Stop color="RED" />
+                     <Stop color="RED" offset="1.0" />
+                  </stops>
+               </LinearGradient>
+            </unFocusColor></JFXTextField>
+            <JFXTextField fx:id="cNome" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="104.0" layoutY="100.0" prefHeight="36.0" prefWidth="210.0" promptText="Name" style="-fx-background-color: white;">
+                <font>
+                    <Font size="22.0" />
+                </font>
+            <unFocusColor>
+               <LinearGradient endX="1.0" endY="1.0" startX="0.9857142857142858">
+                  <stops>
+                     <Stop color="RED" />
+                     <Stop color="#ffbf00" offset="1.0" />
+                  </stops>
+               </LinearGradient>
+            </unFocusColor></JFXTextField>
+            <JFXPasswordField fx:id="cSenha" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="104.0" layoutY="176.0" prefHeight="36.0" prefWidth="210.0" promptText="Password" style="-fx-background-color: white;">
+                <font>
+                    <Font size="22.0" />
+                </font>
+            <unFocusColor>
+               <LinearGradient endX="1.0" endY="1.0" startX="0.9857142857142858">
+                  <stops>
+                     <Stop color="RED" />
+                     <Stop color="RED" offset="1.0" />
+                  </stops>
+               </LinearGradient>
+            </unFocusColor></JFXPasswordField>
+        </children>
+        <effect>
+            <ColorAdjust brightness="0.24" contrast="1.0" hue="-0.17" saturation="0.02" />
+        </effect>
+    </AnchorPane>
+   <Label layoutX="2.0" layoutY="584.0" text="Anderson Alex Durante &amp; Gustavo Rocha Serafim" textFill="WHITE" />
+   <HBox alignment="CENTER" layoutX="116.0" layoutY="124.0" prefHeight="39.0" prefWidth="202.0">
+      <children>
+      
+                <Label fx:id="txt2" text="Catalog The Sky!" textAlignment="CENTER" textFill="WHITE">
+              <font>
+                  <Font size="27.0" />
+              </font>
+          </Label>
+      </children>
+   </HBox>
+   <HBox alignment="CENTER" layoutX="334.0" layoutY="124.0" prefHeight="39.0" prefWidth="155.0">
+      <children>
+                <Label fx:id="txt3" alignment="CENTER" onMouseClicked="#Cadastrar" onMousePressed="#Cadastrar" style="-fx-cursor: hand" text="Join Us Now!" textFill="WHITE" underline="true">
+              <font>
+                  <Font size="27.0" />
+              </font>
+              <effect>
+                  <Glow />
+              </effect>
+          </Label>
+      </children>
+   </HBox>
+
+</AnchorPane>

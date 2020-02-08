@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="619.0" prefWidth="705.0" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controle.JanelaCatalogoInfo">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1882.0" prefWidth="705.0" style="-fx-background-color: black;">
+         <children>
+            <Canvas fx:id="canvas" height="1802.0" layoutY="80.0" width="705.0" />
+            <HBox layoutY="1.0" prefHeight="80.0" prefWidth="705.0">
+               <children>
+                  <AnchorPane prefHeight="109.0" prefWidth="717.0" style="-fx-background-color: #b042f4;">
+                     <children>
+                        <Label fx:id="constelacao" layoutX="38.0" layoutY="6.0" text="Andromeda" textFill="WHITE">
+                           <font>
+                              <Font size="45.0" />
+                           </font>
+                           <effect>
+                              <Glow level="1.0" />
+                           </effect>
+                        </Label>
+                        <Label fx:id="descricao" layoutX="436.0" layoutY="19.0" text="Princess of Ethiopia" textFill="WHITE">
+                           <font>
+                              <Font size="28.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <Label fx:id="texto" alignment="TOP_CENTER" layoutX="8.0" layoutY="97.0" prefHeight="622.0" prefWidth="671.0" text="The constellation Orion, the great hunter, is visible from October through March in both hemispheres. It can be seen at latitudes between 85 degrees and -75 degrees. It is a large constellation filling an area 594 square degrees. It ranks 26th in size among the 88 constellations. It is bordered by Taurus to the northwest, Eridanus to the southwest, Lepus to the south, Monoceros to the east, and Gemini to the northeast. It is without a doubt one of the brightest and most beautiful constellation in the winter sky. Its bright stars form an hourglass shape that can be seen even in urban areas with moderate amounts of light pollution. It contains an asterism of three stars in a straight line known as Orion’s Belt. This is one of the most recognizable groupings of stars in the night sky. Orion is one of the 48 constellations first cataloged by the Greek astronomer Ptolemy in the second century. It was named after the hero of Greek mythology who was killed by Scorpius, the scorpion. It is one of the oldest constellations with roots in many ancient cultures. It has been depicted on ivory carvings that are believed to have been fashioned over 32,000 years ago. The ancient Babylonians saw it as the Heavenly Shepherd. To the Egyptians, it represented a god called Sah. In Greek mythology, the stars represent the great hunter Orion. He was the son of the sea god Poseidon and Euryale, the daughter of King Minos of Crete. Orion boasted that he would kill every animal on Earth. This angered the goddess Gaia so she sent a scorpion to kill him. The gods felt sorry for Orion, so they put him and his dogs in the sky as constellations, along with all of the animals he hunted. Scorpius, the scorpion, was placed on the opposite side of the sky so that Orion would never be hurt by it again. To this day, Orion is never seen in the sky at the same time as Scorpius." textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <effect>
+                  <Glow level="0.62" />
+               </effect>
+            </Label>
+            <ImageView fx:id="imagem1" fitHeight="281.0" fitWidth="289.0" layoutX="36.0" layoutY="719.0" pickOnBounds="true">
+            </ImageView>
+            <ImageView fx:id="imagem2" fitHeight="280.0" fitWidth="317.0" layoutX="353.0" layoutY="719.0" pickOnBounds="true">
+            </ImageView>
+            <Label fx:id="desc1" layoutX="52.0" layoutY="1007.0" prefHeight="36.0" prefWidth="257.0" text="The constellation Andromeda showing common points of interest. © Sea and Sky" textFill="WHITE" wrapText="true" />
+            <Label fx:id="desc2" layoutX="370.0" layoutY="1007.0" prefHeight="36.0" prefWidth="284.0" text="Andromeda constellation map.© Torsten Bronger CC BY-SA 3.0" textFill="WHITE" wrapText="true" />
+            <TableView fx:id="tv" layoutX="55.0" layoutY="1078.0" prefHeight="414.0" prefWidth="597.0" stylesheets="@Style.css">
+              <columns>
+                <TableColumn fx:id="obj" prefWidth="71.0" style="-fx-alignment: center" text="Object" />
+                <TableColumn fx:id="nome" prefWidth="136.0" style="-fx-alignment: center" text="Designation" />
+                  <TableColumn fx:id="significado" prefWidth="165.0" style="-fx-alignment: center" text="Name / Meaning" />
+                  <TableColumn fx:id="tipo" prefWidth="148.0" style="-fx-alignment: center" text="Object Type" />
+                  <TableColumn fx:id="vmag" prefWidth="76.0" style="-fx-alignment: center" text="V Mag" />
+              </columns>
+            </TableView>
+            <ImageView fx:id="imagem3" fitHeight="308.0" fitWidth="305.0" layoutX="34.0" layoutY="1525.0" pickOnBounds="true">
+            </ImageView>
+            <ImageView fx:id="imagem4" fitHeight="310.0" fitWidth="315.0" layoutX="356.0" layoutY="1523.0" pickOnBounds="true">
+            </ImageView>
+            <Label fx:id="desc3" layoutX="36.0" layoutY="1833.0" prefHeight="35.0" prefWidth="305.0" text="M31 the Andromeda Galaxy. Stars in the foregroud are in our own galaxy. © Adam Evans CC BY 2.0" textFill="WHITE" wrapText="true" />
+            <Label fx:id="desc4" layoutX="363.0" layoutY="1833.0" prefHeight="35.0" prefWidth="308.0" text="NGC 7662 the Blue Snowball Nebula as seen by the Hubble Space Telescope" textFill="WHITE" wrapText="true" />
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controle.JanelaCadastroConstelacao">
+   <children>
+      <Label fx:id="Register" layoutX="49.0" layoutY="8.0" text="REGISTER CONSTELLATION">
+         <font>
+            <Font size="50.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#428bff" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <Glow level="0.54" />
+         </effect>
+      </Label>
+      <JFXListView fx:id="ltv" layoutX="49.0" layoutY="81.0" onMouseClicked="#Selecionar" prefHeight="90.0" prefWidth="603.0" style="-fx-background-color: #00d8ff; -fx-font-size: 16;">
+      </JFXListView>
+      <Label layoutX="67.0" layoutY="173.0" text="Description:" textFill="WHITE">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="description" layoutX="242.0" layoutY="179.0" prefHeight="31.0" prefWidth="325.0" style="-fx-text-fill: white;">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#978989" />
+                  <Stop color="#dfff00" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+      </JFXTextField>
+      <Label layoutX="31.0" layoutY="251.0" text="Text:" textFill="WHITE">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="text" layoutX="120.0" layoutY="258.0" prefHeight="164.0" prefWidth="518.0" style="-fx-background-color: white;">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="#ffc700" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+      </JFXTextArea>
+      <Label layoutX="31.0" layoutY="422.0" text="Img1:" textFill="WHITE">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="img1" layoutX="120.0" layoutY="428.0" prefHeight="31.0" prefWidth="325.0" style="-fx-text-fill: white;" unFocusColor="#00ff1e" />
+      <Label layoutX="31.0" layoutY="465.0" text="Img2:" textFill="WHITE">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="img2" layoutX="120.0" layoutY="468.0" prefHeight="31.0" prefWidth="325.0" style="-fx-text-fill: white;" unFocusColor="#ffee00" />
+      <Label layoutX="31.0" layoutY="508.0" text="Img3:" textFill="WHITE">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="img3" layoutX="120.0" layoutY="514.0" prefHeight="31.0" prefWidth="325.0" style="-fx-text-fill: white;" unFocusColor="#00fff1" />
+      <Label layoutX="31.0" layoutY="551.0" text="Img4:" textFill="WHITE">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="img4" layoutX="120.0" layoutY="557.0" prefHeight="31.0" prefWidth="325.0" style="-fx-text-fill: white;" unFocusColor="#b800ff" />
+      <JFXButton layoutX="468.0" layoutY="459.0" onAction="#Register" style="-fx-background-color: #00ff90;" text="Register / Update">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="524.0" layoutY="526.0" onAction="#Cancel" style="-fx-background-color: #f41339;" text="Cancel">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

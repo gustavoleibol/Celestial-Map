@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="619.0" prefWidth="705.0" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controle.JanelaCatalogo">
+   <children>
+      <AnchorPane fx:id="Catalogo" prefHeight="619.0" prefWidth="705.0" style="-fx-background-color: black;">
+         <children>
+            <Canvas fx:id="canvas" height="536.0" layoutY="83.0" width="705.0" />
+            <HBox alignment="CENTER" prefHeight="85.0" prefWidth="705.0" style="-fx-border-color: black;">
+               <children>
+                  <AnchorPane prefHeight="68.0" prefWidth="703.0" style="-fx-background-color: #b042f4;">
+                     <children>
+                        <Label fx:id="Constellation" alignment="CENTER" layoutX="22.0" layoutY="5.0" text="Constellation Catalog" textFill="WHITE">
+                           <font>
+                              <Font size="51.0" />
+                           </font>
+                           <effect>
+                              <Glow level="1.0" />
+                           </effect>
+                        </Label>
+                        <Label fx:id="User" layoutX="582.0" layoutY="24.0" text="User" textFill="#00ffd9">
+                           <font>
+                              <Font name="System Italic" size="24.0" />
+                           </font>
+                           <effect>
+                              <Glow level="1.0" />
+                           </effect>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <AnchorPane layoutY="88.0" prefHeight="531.0" prefWidth="705.0">
+               <children>
+                  <HBox layoutX="91.0" layoutY="5.0" prefHeight="210.0" prefWidth="196.0">
+                     <children>
+                        <AnchorPane prefHeight="213.0" prefWidth="235.0">
+                           <children>
+                              <JFXButton style="-fx-cursor: hand" onAction="#Button1" prefHeight="210.0" prefWidth="197.0" text=" " />
+                              <ImageView fx:id="img1" disable="true" fitHeight="210.0" fitWidth="197.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../Imagens/Interrogacao.png" />
+                                 </image>
+                                 <effect>
+                                    <Bloom threshold="0.32" />
+                                 </effect>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="430.0" layoutY="6.0" prefHeight="210.0" prefWidth="196.0">
+                     <children>
+                        <AnchorPane prefHeight="213.0" prefWidth="235.0">
+                           <children>
+                              <JFXButton style="-fx-cursor: hand" onAction="#Button2" prefHeight="210.0" prefWidth="196.0" text=" " />
+                              <ImageView fx:id="img2" disable="true" fitHeight="210.0" fitWidth="196.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../Imagens/Interrogacao.png" />
+                                 </image>
+                                 <effect>
+                                    <Bloom threshold="0.32" />
+                                 </effect>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="94.0" layoutY="251.0" prefHeight="210.0" prefWidth="196.0">
+                     <children>
+                        <AnchorPane prefHeight="213.0" prefWidth="235.0">
+                           <children>
+                              <JFXButton style="-fx-cursor: hand" onAction="#Button3" prefHeight="210.0" prefWidth="196.0" text=" " />
+                              <ImageView fx:id="img3" disable="true" fitHeight="210.0" fitWidth="196.0" pickOnBounds="true">
+                                 <effect>
+                                    <Bloom threshold="0.33" />
+                                 </effect>
+                                 <image>
+                                    <Image url="@../Imagens/Interrogacao.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="428.0" layoutY="251.0" prefHeight="210.0" prefWidth="196.0">
+                     <children>
+                        <AnchorPane prefHeight="213.0" prefWidth="235.0">
+                           <children>
+                              <JFXButton style="-fx-cursor: hand" onAction="#Button4" prefHeight="210.0" prefWidth="196.0" text=" " />
+                              <ImageView fx:id="img4" disable="true" fitHeight="210.0" fitWidth="196.0" pickOnBounds="true">
+                                 <effect>
+                                    <Bloom threshold="0.32" />
+                                 </effect>
+                                 <image>
+                                    <Image url="@../Imagens/Interrogacao.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="84.0" layoutY="214.0" prefHeight="35.0" prefWidth="211.0">
+                     <children>
+                        <Label fx:id="const1" alignment="CENTER" prefHeight="45.0" prefWidth="225.0" text="?">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#45eb15" />
+                                    <Stop color="#00ffd9" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="421.0" layoutY="214.0" prefHeight="35.0" prefWidth="211.0">
+                     <children>
+                        <Label fx:id="const2" alignment="CENTER" prefHeight="45.0" prefWidth="225.0" text="?">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#45eb15" />
+                                    <Stop color="#00ffd9" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="84.0" layoutY="461.0" prefHeight="35.0" prefWidth="211.0">
+                     <children>
+                        <Label fx:id="const3" alignment="CENTER" prefHeight="45.0" prefWidth="225.0" text="?">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#45eb15" />
+                                    <Stop color="#00ffd9" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="423.0" layoutY="461.0" prefHeight="35.0" prefWidth="211.0">
+                     <children>
+                        <Label fx:id="const4" alignment="CENTER" prefHeight="45.0" prefWidth="225.0" text="?">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#45eb15" />
+                                    <Stop color="#00ffd9" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <JFXButton layoutX="643.0" layoutY="454.0" onAction="#Next" prefHeight="57.0" prefWidth="63.0" style="-fx-background-color: white;" text=" ">
+                     <ripplerFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#00ffe6" />
+                              <Stop color="#00ff30" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </ripplerFill></JFXButton>
+                  <ImageView disable="true" fitHeight="57.0" fitWidth="67.0" layoutX="646.0" layoutY="454.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Imagens/Next.png" />
+                     </image>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </ImageView>
+                  <JFXButton layoutY="450.0" onAction="#Back" prefHeight="57.0" prefWidth="63.0" style="-fx-background-color: white;" text=" ">
+                     <ripplerFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#00ffe6" />
+                              <Stop color="#00ff30" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </ripplerFill>
+                  </JFXButton>
+                  <ImageView disable="true" fitHeight="57.0" fitWidth="63.0" layoutX="3.0" layoutY="450.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Imagens/Next.png" />
+                     </image>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

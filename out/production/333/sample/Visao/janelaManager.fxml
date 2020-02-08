@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Manager" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controle.JanelaManager">
+   <children>
+      <Label fx:id="Manage" layoutX="194.0" layoutY="8.0" text="Manage Users">
+         <font>
+            <Font size="50.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#00ff9d" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <Glow level="0.54" />
+         </effect>
+      </Label>
+      <JFXListView fx:id="ltv" layoutX="14.0" layoutY="82.0" onMouseClicked="#selecionar" prefHeight="503.0" prefWidth="246.0" showTooltip="true" />
+      <Label layoutX="286.0" layoutY="137.0" text="Search User:" textFill="WHITE">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="busca" focusColor="WHITE" layoutX="451.0" layoutY="138.0" style="-fx-text-fill: white;" unFocusColor="#245482">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="644.0" layoutY="141.0" onAction="#buscar" style="-fx-background-color: #02ff78;" text="Ok">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="422.0" layoutY="213.0" text="Data:" textFill="WHITE" underline="true">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="314.0" layoutY="296.0" text="Login:" textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="login" layoutX="407.0" layoutY="294.0" prefHeight="44.0" prefWidth="196.0" style="-fx-text-fill: white;" unFocusColor="#00ff66">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="311.0" layoutY="354.0" text="Name:" textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="nome" layoutX="407.0" layoutY="353.0" prefHeight="37.0" prefWidth="196.0" style="-fx-text-fill: white;" unFocusColor="#00ff66">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="272.0" layoutY="416.0" text="Password:" textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <JFXPasswordField fx:id="senha" layoutX="407.0" layoutY="414.0" prefHeight="44.0" prefWidth="196.0" style="-fx-text-fill: white;" unFocusColor="#00ff66" />
+      <JFXButton buttonType="RAISED" layoutX="378.0" layoutY="491.0" onAction="#deletar" prefHeight="45.0" prefWidth="89.0" style="-fx-background-color: #ff2a00;" text="Delete">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="491.0" layoutY="491.0" onAction="#alterar" prefHeight="45.0" prefWidth="104.0" style="-fx-background-color: #07ffd9;" text="Change">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXToggleButton fx:id="tg" layoutX="595.0" layoutY="407.0" onAction="#showpass" prefHeight="58.0" prefWidth="97.0" text="View" textFill="WHITE" toggleColor="#3bff26">
+         <toggleLineColor>
+            <LinearGradient endY="0.9" startX="1.0" startY="0.6047619047619048">
+               <stops>
+                  <Stop color="#00eb4a" />
+                  <Stop color="#00eb4a" offset="0.1649484536082474" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </toggleLineColor>
+      </JFXToggleButton>
+      <JFXTextField fx:id="senha2" layoutX="407.0" layoutY="415.0" prefHeight="37.0" prefWidth="196.0" style="-fx-text-fill: white;" unFocusColor="#00ff66">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

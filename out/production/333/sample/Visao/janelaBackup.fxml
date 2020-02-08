@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controle.JanelaBackup">
+   <children>
+      <Canvas fx:id="canvas" height="600.0" width="700.0" />
+      <JFXButton layoutX="369.0" layoutY="124.0" onAction="#Ler" style="-fx-background-color: #d14964;" text="Read Files">
+         <font>
+            <Font size="51.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="369.0" layoutY="334.0" onAction="#Salvar" prefHeight="108.0" prefWidth="294.0" style="-fx-background-color: #42f4a7;" text="Save Files">
+         <font>
+            <Font size="51.0" />
+         </font>
+      </JFXButton>
+      <JFXComboBox fx:id="cb" focusColor="WHITE" labelFloat="true" layoutX="75.0" layoutY="247.0" prefHeight="53.0" prefWidth="173.0" promptText="TABLES" style="-fx-background-color: white; -fx-font-size: 22;" />
+   </children>
+</AnchorPane>

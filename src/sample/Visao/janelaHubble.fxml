@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Hubble" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="619.0" prefWidth="705.0" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controle.JanelaHubble">
+   <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="619.0" prefWidth="705.0">
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="3650.0" prefWidth="705.0" style="-fx-background-color: black;">
+         <children>
+            <Canvas fx:id="canvas" height="3561.0" layoutY="88.0" width="705.0" />
+            <HBox prefHeight="89.0" prefWidth="705.0">
+               <children>
+                  <AnchorPane prefHeight="109.0" prefWidth="719.0" style="-fx-background-color: #b042f4;">
+                     <children>
+                        <Label fx:id="Fields" layoutX="41.0" layoutY="9.0" text="Hubble Deep Fields" textFill="WHITE">
+                           <font>
+                              <Font size="48.0" />
+                           </font>
+                           <effect>
+                              <Glow level="1.0" />
+                           </effect>
+                        </Label>
+                        <ImageView fitHeight="85.0" fitWidth="89.0" layoutX="520.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Imagens/Telescope.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <Label layoutX="43.0" layoutY="99.0" text="Sharpest Ever View of the Andromeda Galaxy" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <effect>
+                  <Glow level="0.5" />
+               </effect>
+            </Label>
+            <JFXButton layoutX="43.0" layoutY="138.0" onAction="#Andromeda" prefHeight="301.0" prefWidth="603.0" style="-fx-cursor: hand" />
+            <ImageView disable="true" fitHeight="301.0" fitWidth="603.0" layoutX="43.0" layoutY="138.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Imagens/Andromeda.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="43.0" layoutY="449.0" text="Westerlund 2 — Hubble’s 25th Anniversary" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <effect>
+                  <Glow level="0.5" />
+               </effect>
+            </Label>
+            <JFXButton layoutX="43.0" layoutY="488.0" onAction="#Westerlund2" prefHeight="301.0" prefWidth="603.0" style="-fx-cursor: hand" />
+            <ImageView disable="true" fitHeight="301.0" fitWidth="603.0" layoutX="43.0" layoutY="488.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Imagens/Westerlund2.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="43.0" layoutY="800.0" text="The Most Detailed Image of the Crab Nebula" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <effect>
+                  <Glow level="0.5" />
+               </effect>
+            </Label>
+            <JFXButton layoutX="43.0" layoutY="844.0" onAction="#Crab" prefHeight="301.0" prefWidth="603.0" style="-fx-cursor: hand" />
+            <ImageView disable="true" fitHeight="301.0" fitWidth="603.0" layoutX="43.0" layoutY="844.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Imagens/Crab.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="43.0" layoutY="1163.0" text="Real Image Colors of the Carina Nebula" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <effect>
+                  <Glow level="0.5" />
+               </effect>
+            </Label>
+            <JFXButton layoutX="43.0" layoutY="1202.0" onAction="#Carina" prefHeight="301.0" prefWidth="603.0" style="-fx-cursor: hand" />
+            <ImageView disable="true" fitHeight="301.0" fitWidth="603.0" layoutX="43.0" layoutY="1202.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Imagens/Carina.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="43.0" layoutY="1514.0" text="Hubble Extreme Deep Field" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <effect>
+                  <Glow level="0.5" />
+               </effect>
+            </Label>
+            <JFXButton layoutX="43.0" layoutY="1553.0" onAction="#Deep" prefHeight="301.0" prefWidth="603.0" style="-fx-cursor: hand" />
+            <ImageView disable="true" fitHeight="301.0" fitWidth="603.0" layoutX="43.0" layoutY="1553.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Imagens/Deep.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="43.0" layoutY="1873.0" text="Pillars of Creation — Visible Light" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <effect>
+                  <Glow level="0.5" />
+               </effect>
+            </Label>
+            <JFXButton layoutX="43.0" layoutY="1912.0" onAction="#Pillars" prefHeight="301.0" prefWidth="603.0" style="-fx-cursor: hand" />
+            <ImageView disable="true" fitHeight="301.0" fitWidth="603.0" layoutX="43.0" layoutY="1912.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Imagens/Pillar.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="43.0" layoutY="2225.0" text="Hubble mosaic of the majestic Sombrero Galaxy" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <effect>
+                  <Glow level="0.5" />
+               </effect>
+            </Label>
+            <JFXButton layoutX="43.0" layoutY="2264.0" onAction="#Sombrero" prefHeight="301.0" prefWidth="603.0" style="-fx-cursor: hand" />
+            <ImageView disable="true" fitHeight="301.0" fitWidth="603.0" layoutX="43.0" layoutY="2264.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Imagens/Sombrero.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="43.0" layoutY="2578.0" text="Helix Nebula, The Eye of God" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <effect>
+                  <Glow level="0.5" />
+               </effect>
+            </Label>
+            <JFXButton layoutX="43.0" layoutY="2617.0" onAction="#Helix" prefHeight="301.0" prefWidth="603.0" style="-fx-cursor: hand" />
+            <ImageView disable="true" fitHeight="301.0" fitWidth="603.0" layoutX="43.0" layoutY="2617.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Imagens/Helix.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="43.0" layoutY="2930.0" text="Cassiopeia A - Aftermath of a Violent Stellar Death" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <effect>
+                  <Glow level="0.5" />
+               </effect>
+            </Label>
+            <JFXButton layoutX="42.0" layoutY="2969.0" onAction="#CassiopeiaA" prefHeight="301.0" prefWidth="603.0" style="-fx-cursor: hand" />
+            <ImageView disable="true" fitHeight="301.0" fitWidth="603.0" layoutX="42.0" layoutY="2969.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Imagens/Cassiopeia.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="47.0" layoutY="3280.0" text="A Star Set to Explode" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <effect>
+                  <Glow level="0.5" />
+               </effect>
+            </Label>
+            <JFXButton layoutX="42.0" layoutY="3319.0" onAction="#Supernova" prefHeight="301.0" prefWidth="603.0" style="-fx-cursor: hand" />
+            <ImageView disable="true" fitHeight="301.0" fitWidth="603.0" layoutX="42.0" layoutY="3319.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Imagens/Star.jpg" />
+               </image>
+            </ImageView>
+         </children>
+    </AnchorPane>
+   </ScrollPane>
+</AnchorPane>

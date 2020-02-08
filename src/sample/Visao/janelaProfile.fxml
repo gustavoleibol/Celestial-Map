@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXColorPicker?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:controller="sample.Controle.JanelaProfile" fx:id="Profile" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="705.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="705.0">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Imagens/Galaxy2.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="User" alignment="CENTER" text="Live Long and Prosper, User!">
+               <font>
+                  <Font size="35.0" />
+               </font>
+               <effect>
+                  <Glow level="0.54" />
+               </effect>
+            </Label>
+            <ImageView fitHeight="100.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Imagens/Galaxy2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <AnchorPane layoutX="381.0" layoutY="145.0" prefHeight="319.0" prefWidth="287.0" style="-fx-border-color: white;">
+         <children>
+            <JFXTextField fx:id="tfNome" alignment="CENTER" layoutX="61.0" layoutY="113.0" prefHeight="58.0" prefWidth="166.0" style="-fx-font-size: 20;" text="Login" />
+            <JFXTextField fx:id="tfLogin" alignment="CENTER" layoutX="61.0" layoutY="38.0" prefHeight="58.0" prefWidth="166.0" style="-fx-font-size: 20;" text="Name" />
+            <JFXPasswordField fx:id="tfSenha" alignment="CENTER" layoutX="61.0" layoutY="187.0" prefHeight="58.0" prefWidth="166.0" text="Password" />
+            <JFXTextField disable="true" fx:id="tfSenha2" alignment="CENTER" layoutX="61.0" layoutY="187.0" prefHeight="58.0" prefWidth="166.0" />
+            <JFXToggleButton fx:id="tg"  onAction="#showpass" layoutX="96.0" layoutY="245.0" text="View" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="36.0" layoutY="145.0" prefHeight="319.0" prefWidth="287.0" style="-fx-border-color: white;">
+         <children>
+            <Label layoutX="27.0" layoutY="50.0" text="Audio:">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <JFXSlider fx:id="Audio" layoutX="118.0" layoutY="63.0" prefHeight="14.0" prefWidth="153.0" />
+            <Label layoutX="27.0" layoutY="121.0" text="Star Color:">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <JFXColorPicker fx:id="cp1" layoutX="162.0" layoutY="128.0" />
+            <Label layoutX="26.0" layoutY="194.0" text="Line Color:">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <JFXColorPicker fx:id="cp2" layoutX="162.0" layoutY="201.0" />
+         </children>
+      </AnchorPane>
+      <JFXButton onAction="#Update" layoutX="363.0" layoutY="515.0" style="-fx-background-color: #00ffa5;" text="Update">
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#1aff00" />
+                  <Stop color="#00ffa5" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton onAction="#Cancel" layoutX="235.0" layoutY="515.0" style="-fx-background-color: #f41339;" text="Cancel">
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#1aff00" />
+                  <Stop color="#00ffa5" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

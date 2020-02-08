@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="Maps" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="716.0" prefWidth="809.0" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controle.JanelaMaps">
+   <children>
+      <BorderPane prefHeight="486.0" prefWidth="539.0">
+         <top>
+            <Label fx:id="ponto" text="Detected Star: NO" textFill="aliceblue">
+               <font>
+                  <Font size="15.0" name="Arial"></Font>
+               </font>
+            </Label>
+         </top>
+         <center>
+            <AnchorPane prefHeight="427.0" prefWidth="620.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+               <children>
+                  <Canvas fx:id="canvas" height="700" layoutX="-1.0" width="810" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
